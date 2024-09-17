@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped);
+    background-size: cover;
+    background-position:center -180px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+main{
+    width: 100vw;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 76px;
+    background-color: rgba(51, 51, 51, 0.85);
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 1;
+    align-items: center;
+    padding: 5px;
+    backdrop-filter: blur(5px);
+}
+
+.nav-logo{
+    height: 70px;
+    width: 250px;
+    transition: filter 0.3s ease;
+}
+
+.nav-logo:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.nav-logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.Nav-ul{
+    width: 600px;
+    height: 70px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.Nav-ul a{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.Nav-ul a:hover{
+    cursor: pointer;
+    color: rgb(132, 132, 132);
+}
+
+.center-heading{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center-heading .heading{
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.center-box{
+    text-align: center;
+}
+
+.para{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.center-button{
+    width: 185px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 17px;
+    outline: none;
+    border: 3px solid white;
+    box-shadow: 0px 0px 20px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.center-button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    border: 3px solid white;
+    color: white;   
+}
+
+.service-section{
+    font-family: "Poppins",sans-serif;
+    background-color: #f2f2f2;
+    padding: 70px;
+}
+
+.service-heading {
+    padding-top: 30px;
+}
+
+.service-heading h1{
+    text-align: center;
+    font-size: 32px;
+}
+.service-heading h4{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.services{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.cards{
+    min-height: 332px;
+    max-width: 366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cards:hover{
+    cursor: pointer;
+    background-color: rgb(187, 187, 187);
+    transform: translateY(-5px);
+}
+
+.cards img{
+    height: 120px;
+    width: 120px;
+    border-radius: 60%;
+    position: relative;
+    bottom: 27px;
+}
+
+.cards h1{
+    text-align: center;
+    font-size: 18.72px;
+}
+
+.cards p{
+    text-align: center;
+    font-size: 16px;
+}
+
+.about-us-section{
+    font-family: "Poppins",sans-serif;
+    background-color: #f2f2f2;
+    padding: 70px;
+}
+
+.aboutUs-heading h1{
+    text-align: center;
+    font-size: 32px;
+}
+.aboutUs-heading p{
+    text-align: center;
+    font-size: 16px;
+}
+.about-us-section{
+    line-height: 2;
+}
+
+.aboutUs-content h1{
+    font-size: 18.72px;
+} 
+.aboutUs-content p{
+    font-size: 16px;
+} 
+
+.aboutUs-content{
+    margin-top: 20px;
+}
+
+.ul-List{
+    list-style-position: inside;
+    font-size: 16px;
+}
+
+.contactUs-section{
+    font-family: "Poppins",sans-serif;
+    background-color: #f2f2f2;
+    padding: 70px;
+}
+
+.contactUs-heading{
+    line-height: 2;
+}
+
+.contactUs-heading h1{
+    text-align: center;
+    font-size: 32px;
+}
+.contactUs-heading p{
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-list{
+    list-style: none;
+    width: 530px;
+}
+
+.footer-list li{
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.contactUs-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.contactUs-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 530px;
+}
+
+.contactUs-fields input{
+    font-family: "Poppins",sans-serif;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contactUs-fields textarea{
+    font-family: "Poppins",sans-serif;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.contactUs-fields button{
+    font-family: "Poppins",sans-serif;
+    background-color: #333333;
+    color:white;
+    font-size: 17px;
+    width: 163px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 9px 10px;
+    transition: background-color 0.2s ease;
+}
+
+
+.contactUs-fields button:hover{
+    cursor: pointer;
+    background-color: #787878;
+}
+
+.contactUs-fields input:focus, .contactUs-fields textarea{
+    outline: none;
+}
+
+@media screen and (max-width: 500px) {
+    .footer-list li {
+        font-size: 10px;
+        align-items: flex-start;
+    }
+    .contactUs-footer {
+        padding:30px;
+    }
+    .service-section{
+        padding:30px;
+    }
+    .about-us-section{
+        padding: 30px;
+    }
+    .contactUs-section{
+        padding: 30px;
+    }
+
+    .contactUs-fields{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:1265px){
+    .contactUs-footer{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .footer-list li{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .Nav-ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
